@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/assets/css/style.css') }}style.css">
+    <title>{% block title %}
+    {% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/produtos">Produtos</a></li>
+        </ul>
+    </nav>
+    {% block content%}
+    {% endblock %}
+<hr>
+<center>
+    <h4>Desenvolvido por Lucas Moura</h4>
+    <ul>
+        <li><a href="/termos">Termos de uso</a></li>
+        <li><a href="/politica">Políticas de privacidade</a></li>
+        <li><a href="/termos">Como utilizar</a></li>
+    </ul>
+</center>
+</body>
+</html>
